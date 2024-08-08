@@ -714,6 +714,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Call To Action Section
 --------------------------------*/
+
 #call-to-action {
   overflow: hidden;
   background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/call-to-action-bg.jpg) fixed center center;
@@ -734,9 +735,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (min-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 10px;
   }
+#call-to-action .cta-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#call-to-action img{
+  margin-right:5px;
+  /* margin-left: 10px; */
+}
+#call-to-action  cta-btn-container a {
+  margin-right:20px;
 }
 
 #call-to-action .cta-btn {
@@ -744,11 +757,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 30px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  padding: 8px 0px;
   border-radius: 25px;
   transition: background 0.5s;
-  margin: 10px;
+  /* margin: 50px; */
+  margin-top: auto;
+  margin-right:10px;
+  padding-right: 20px;
+  padding-left:20px;
   border: 2px solid #fff;
   color: #fff;
 }
@@ -756,8 +776,25 @@ body.mobile-nav-active #mobile-nav-toggle {
 #call-to-action .cta-btn:hover {
   background: #1dc8cd;
   border: 2px solid #1dc8cd;
+
+}
+.whatsapp-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
 }
 
+.whatsapp-icon img {
+  width: 24px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 5px; /* Space between icon and text */
+}
+  
+.cta-btn img {
+  width: 24px; /* Adjust the size of the icon */
+  margin-right: 8px;
+}
 /* More Features Section
 --------------------------------*/
 #more-features {
