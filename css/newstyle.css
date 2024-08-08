@@ -1,0 +1,14 @@
+
+  /* Media query for mobile sizes */
+  @media (max-width: 768px) {
+    .cta-btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* Basic styling for buttons */
+
+
+  
