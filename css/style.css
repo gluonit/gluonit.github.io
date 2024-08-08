@@ -738,12 +738,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     justify-content: center;
     gap: 10px;
   }
-#call-to-action .cta-btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
+  #call-to-action .cta-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  #call-to-action .whatsapp-icon img {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 5px; /* Space between icon and text */
+  }
+  
+  }
 #call-to-action img{
   margin-right:5px;
   /* margin-left: 10px; */
