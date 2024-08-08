@@ -877,14 +877,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #clients img {
-  max-width: 100%;
-  opacity: 0.5;
+  /* max-width: 100%;
+   */
+  width: 50%;
+  height:150px;
+   opacity: 0.5;
   transition: 0.3s;
   padding: 15px 0;
 }
 
 #clients img:hover {
   opacity: 1;
+}
+
+@media (max-width: 768px){
+  #clients img{
+    width: 70%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.3s;
+    padding: 15px 0;
+  }
+
 }
 
 /* Pricing Section
@@ -1028,20 +1042,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
 }
 
-#team row{
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping to the next line */
-    justify-content: center; /* Center items horizontally */
-    gap: 5px; /* Adjust the gap between items */
-}
-
-#team .col-lg-6, .col-md-6 {
-  display: flex; /* Use Flexbox for the column */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /*Center content horizontally */
-  padding:0;
-}
 
 #team .member {
   text-align: center;
