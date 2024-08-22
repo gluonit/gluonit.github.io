@@ -122,3 +122,23 @@ body {
         transform: translateX(0);
     }
 }
+
+.back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-home a {
+    background-attachment: #00bfa5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.5s;
+}
+
+.back-home a:hover {
+    background-color: #008e7a;
+}
