@@ -142,3 +142,18 @@ body {
 .back-home a:hover {
     background-color: #008e7a;
 }
+
+.multi{
+    position: absolute;
+    top: 25px;
+    right : 20px;
+}
+.multi a {
+    /* background-attachment: #00bfa5; */
+    /* color: white; */
+    /* padding: 10px 20px;
+    border-radius: 8px; */
+    /* text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.5s; */
+}
