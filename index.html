@@ -40,14 +40,13 @@
   ======================================================= -->
 </head>
 
-<body>
+<body onload="changeLanguage('id')">
 
   <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container">
-
       <div id="logo" class="pull-left">
         <h1><a href="#intro" class="scrollto">GluonIT</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -56,13 +55,17 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Beranda</a></li>
-          <li><a href="#about">Tentang</a></li>
+          <li class="menu-active" ><a href="#intro" data-lang="id" >Beranda</a></li>
+          <li class="menu-active" ><a href="#intro" data-lang="en">Home</a></li>
+          <li><a href="#about" data-lang="id">Tentang</a></li>
+          <li><a href="#about" data-lang="en">About</a></li>
           <!-- <li><a href="#features">Fitur</a></li> -->
           <!-- <li><a href="#pricing">Harga</a></li> -->
           <!-- <li><a href="#team">Tim</a></li> -->
-          <li><a href="#features">Layanan</a></li>
-          <li><a href="#call-to-action">Hubungi WA</a></li>
+          <li><a href="#features" data-lang = 'id'>Layanan</a></li>
+          <li><a href="#call-to-action" data-lang= 'id'>Hubungi WA</a></li>
+          <li><a href="#features" data-lang="en">Services</a></li>
+          <li><a href="#call-to-action" data-lang="en">Call WA</a></li>
           <!-- <li><a href="#gallery">Produk Gambar</a></li>
           <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
@@ -81,8 +84,15 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li> -->
-          <li><a href="#contact">Kontak</a></li>
+          <li><a href="#contact" data-lang="id">Kontak</a></li>
+          <li><a href="#contact" data-lang="en">Contact</a></li>
+          <!-- <li><button onclick="changeLanguage('en')">English</button>
+              <button onclick="changeLanguage('id')">Bahasa Indonesia</button></li> -->
+
+          <li><a><button id="langButton" class="btn btn-success" style="margin-bottom:10px; margin-top:-1px;">EN</button></a></li>
         </ul>
+
+
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
@@ -94,11 +104,15 @@
 
     <div class="intro-text">
       <h2>GLUON IT Software House</h2>
-      <p>Jasa Pembuatan Aplikasi Desktop/Website/Android</p>
-      <a href="#about" class="btn-get-started scrollto">Jelajah</a>
+      <p data-lang="id">Jasa Pembuatan Aplikasi Desktop/Website/Android</p>
+      <p data-lang="en">Build Services for Desktop / Website / Android </p>
+      <a href="#about" data-lang="id" class="btn-get-started scrollto">Jelajah</a>
+      <a href="#about" data-lang="en" class="btn-get-started scrollto">Explore Now</a>
+      <!-- <button onclick="changeLanguage('en')">English</button>
+      <button onclick="changeLanguage('id')">Bahasa Indonesia</button> -->
     </div>
 
-    <div class="product-screens">
+    <div class="product-screens" >
 
       <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
         <img src="img/product-screen-1.png" alt="">
@@ -122,15 +136,20 @@
     <!--==========================
       About Us Section
     ============================-->
-    <section id="about" class="section-bg">
+    <section id="about" class="section-bg" >
       <div class="container-fluid">
         <div class="section-header">
-          <h3 class="section-title">Tentang</h3>
+          <h3 class="section-title" data-lang ='id'>Tentang</h3>
+          <h3 class="section-title"  data-lang ='en'>About</h3>
           <span class="section-divider"></span>
-          <p class="section-description">
+          <p class="section-description" data-lang="id">
               Berdiri sejak tahun 2011, dibangun dengan tim yang solid serta berdedikasi tinggi
               .Kini kami terus melangkah maju dan terus menciptakan
               produk - produk unggulan dan bermanfaat bagi klien-klien kami
+          </p>
+          <p class="section-description" data-lang="en">
+            Established in 2011, built with a solid and highly dedicated team. We continue to 
+            move forward and create superior and beneficial products for our clients
           </p>
         </div>
 
@@ -139,7 +158,7 @@
             <img src="img/about-img.jpg" alt="">
           </div>
 
-          <div class="col-lg-6 content wow fadeInRight">
+          <div class="col-lg-6 content wow fadeInRight" data-lang="id">
             <h2>Keunggulan dan Manfaat Menggunakan Jasa Kami</h2>
             <h3>Solusi atas permasalahan baik individu ataupun bisnis dengan pembuatan software / aplikasi yang tepat guna
             </h3>
@@ -158,7 +177,29 @@
               macam tantangan pekerjaan
             </p>
           </div>
-        </div>
+
+
+          <!-- versi bahasa inggris -->
+
+          <div class="col-lg-6 content wow fadeInRight" data-lang="en">
+            <h2>Advantages and Benefits of Using Our Services
+              </h2>
+            <h3>Solutions for both individual and business problems with the creation of effective software/applications.
+            </h3>
+            <p>
+              What you can get from us:
+            </p>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> High-quality, stable, durable, and superior software products</li>
+              <li><i class="ion-android-checkmark-circle"></i> Neat and detailed work</li>
+              <li><i class="ion-android-checkmark-circle"></i> Ease of use/user-friendly, as customer satisfaction is our focus</li>
+            </ul>
+
+            <p>
+              Supported by experience in software development, making us accustomed to working very professionally in overcoming all kinds of work challenges
+            </p>
+          </div>        </div>
 
       </div>
     </section><!-- #about -->
@@ -173,7 +214,8 @@
 
           <div class="col-lg-8 offset-lg-4">
             <div class="section-header wow fadeIn" data-wow-duration="1s">
-              <h3 class="section-title">Layanan</h3>
+              <h3 class="section-title" data-lang="id">Layanan</h3>
+              <h3 class="section-title" data-lang="en">Services</h3>
               <span class="section-divider"></span>
             </div>
           </div>
@@ -184,10 +226,50 @@
 
             
           </div>
+            <!-- versi bahasa inggris -->
 
-          <div class="col-lg-8 col-md-7 ">
+          <div class="col-lg-8 col-md-7 " data-lang="en">
 
-            <div class="row">
+            <div class="row" >
+
+              <div class="col-lg-6 col-md-6 box wow fadeInRight">
+                <!-- <div class="icon"><i class="ion-ios-speedometer-outline"></i></div> -->
+                <div class="icon"> <i></i><img src="myicon/greenandroid.png" style="width:90px;height:100px;" ></div>
+
+                <h4 class="title"><a href="">Mobile Applications</a></h4>
+                <p class="description">Providing ease of use for individuals or businesses with high mobility and solid integration to build synergy in business.
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
+                <!-- <div class="icon"><i class="ion-ios-flask-outline"></i></div> -->
+                <div class="icon"><i></i> <img src="myicon/freewebapplication.png" style="width:100px;height:100px;"></div>
+
+                <h4 class="title"><a href="">Web Applications</a></h4>
+                <p class="description">Designed and built for access to a proven reliable and trustworthy information network, it is very suitable for the current trend of widespread individual or business activities.
+                   </p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
+                <!-- <div class="icon"><i class="ion-social-buffer-outline"></i></div> -->
+                <div class="icon"><i></i> <img src="myicon/greendesktpapplication.png" style="width:120px;height:100px;"></div>
+
+                <h4 class="title"><a href="">Desktop Applications</a></h4>
+                <p class="description">Technology that is very robust and established, with full support features from the operating systems it runs on, such as Windows / Linux.
+
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
+                <div class="icon"><i></i> <img src="myicon/itsupportgreen.png" style="width:100px;height:100px;"></div>
+                <!-- <div class="icon"><i class="ion-ios-analytics-outline"></i></div> -->
+                <h4 class="title"><a href="">Support|Consultant|Maintenance</a></h4>
+                <p class="description">Services that aim to optimize and continue the use of the software products we offer.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-8 col-md-7 " data-lang="id">
+
+            <div class="row" >
 
               <div class="col-lg-6 col-md-6 box wow fadeInRight">
                 <!-- <div class="icon"><i class="ion-ios-speedometer-outline"></i></div> -->
@@ -223,7 +305,6 @@
                 </p>
               </div>
             </div>
-
           </div>
 
         </div>
@@ -294,14 +375,14 @@
     <!--==========================
       Call To Action Section
     ============================ -->
-    <section id="call-to-action">
+    <section id="call-to-action" data-lang="id">
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Hubungi</h3>
-            <p class="cta-text"> Konsultasi serta pemesanan bisa langsung hubungi </p>
+            <h3 class="cta-title" >Hubungi</h3>
+            <p class="cta-text" > Konsultasi serta pemesanan bisa langsung hubungi </p>
           </div>
-          <div class="col-md-2 cta-btn-container text-center">
+          <div class="col-md-2 cta-btn-container text-center" >
             <a class="cta-btn align-middle whatsapp-icon" href="https://wa.me/6285163626550/">
               <img src="img/logo-whatsapp.png" alt="Tim Sales 1" />
               Tim Sales 1
@@ -311,11 +392,35 @@
               Tim Sales 2
             </a>
           </div>
+
+
         </div>
 
       </div>
     </section><!-- #call-to-action -->
 
+
+    <section id="call-to-action" data-lang="en">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title" >Call Us</h3>
+            <p class="cta-text"> Consultation and reservations can be directly contacted. </p>
+            </div>
+          <div class="col-md-2 cta-btn-container text-center" >
+            <a class="cta-btn align-middle whatsapp-icon" href="https://wa.me/6285163626550/">
+              <img src="img/logo-whatsapp.png" alt="Tim Sales 1" />
+              Sales Team 1
+            </a>
+            <a class="cta-btn align-middle whatsapp-icon" href="https://wa.me/62811989136/">
+              <img src="img/logo-whatsapp.png" alt="Tim Sales 2" />
+              Sales Team 2
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
     <!--==========================
       More Features Section
     ============================-->
@@ -372,9 +477,11 @@
     <section id="clients">
       <div class="container">
         <div class="section-header wow fadeIn" data-wow-duration="1s">
-          <h3 class="section-title">Klien</h3>
+          <h3 class="section-title" data-lang="id">Klien</h3>
+          <h3 class="section-title" data-lang="en">Clients</h3>
           <span class="section-divider"></span>
-          <p class="section-description">Beberapa diantara klien unggulan kami</p>
+          <p class="section-description" data-lang="id">Beberapa diantara klien unggulan kami</p>
+          <p class="section-description" data-lang="en">Some of our featured clients.</p>
         </div>
         <div class="row wow fadeIn">
 
@@ -561,7 +668,7 @@
     <!--==========================
       Our Team Section
     ============================-->
-    <section id="team" class="section-bg">
+    <section id="team" class="section-bg" data-lang ='id'>
       <div class="container">
         <div class="section-header wow fadeInLeft">
           <h3 class="section-title">Tim Kami</h3>
@@ -664,6 +771,110 @@
         </div>
       </div>
     </section>
+  <!-- versi bahasa inggris -->
+  <section id="team" class="section-bg" data-lang="en">
+    <div class="container">
+      <div class="section-header wow fadeInLeft">
+        <h3 class="section-title">Our Teams</h3>
+        <span class="section-divider"></span>
+        <p class="section-description">We have a solid and professional team.</p>
+      </div>
+      <div class="row wow fadeInUp">
+        <div class="col-12 col-md-6">
+          <div class="member">
+            <div class="pic rounded mx-auto d-block"><img src="img/team/fauzi_hamzah.jpg" alt=""></div>
+            <h4>Hamzah Fauzi</h4>
+            <span>Executive Sales</span>
+            <div class="social">
+              <a href="https://www.instagram.com/hamzahplur/"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.facebook.com/Hamzahfauziee?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+              <a href="mailto:Hamzahf45@gmail.com"><i class="fa fa-google-plus"></i></a>
+              <a href="https://wa.me/62811989136/"><i class="fa fa-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/hamzah-fauzi-369a9914a "><i class="fa fa-linkedin"></i></a>
+              <!-- <a href=""><i class="fa fa-gmail"></i></a> -->
+
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="member">
+            <div class="pic rounded mx-auto d-block"><img src="img/team/Taufik.jpg" alt=""></div>
+            <h4>Taufik</h4>
+            <span>Developer</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="member">
+            <div class="pic rounded mx-auto d-block"><img src="img/team/Acep Munawar.jpg" alt=""></div>
+            <h4>Acep Munawar</h4>
+            <span>Freelance Developer</span>
+            <div class="social">
+              <a href="https://www.instagram.com/acep_ratnasari?igsh=MWtuNnQ3ajJrZ3J2"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.facebook.com/share/ftjdxGM1Ri4GWWED/?mibextid=qi2Omg"><i class="fa fa-facebook"></i></a>
+              <a href="acepmunawar96@gmail.com"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/acep-munawar-39489719b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin"></i></a>
+              <!-- <a href=""><i class="fa fa-gmail"></i></a> -->
+
+             
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-6">
+          <div class="member">
+            <div class="pic rounded mx-auto d-block"><img src="img/team/Wawiko Supeno.jpg" alt=""></div>
+            <h4>Wawiko Supeno</h4>
+            <span>IT Consultant</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/wawikopeno"><i class="fa fa-facebook"></i></a>
+              <a href="https://wa.me/628567067660/"><i class="fa fa-whatsapp"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="member">
+            <div class="pic rounded mx-auto d-block"><img src="img/team/richie.png" alt=""></div>
+            <h4>Richie Rahmat Hidayat</h4>
+            <span>Team Leader</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/richie"><i class="fa fa-facebook"></i></a>
+              <a href="https://wa.me/6282129031607/"><i class="fa fa-whatsapp"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+<!-- 
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="img/team/team-4.jpg" alt=""></div>
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
     <!-- #team -->
 
     <!--==========================
@@ -735,7 +946,7 @@
     <!--==========================
       Contact Section
     ============================-->
-    <section id="contact">
+    <section id="contact" data-lang="id">
       <div class="container">
         <div class="section-header  wow fadeInUp">
           <h3 class="section-title">Kontak Kami</h3>
@@ -826,12 +1037,139 @@
       </div>
     </section><!-- #contact -->
 
+    <!-- versi bahasa inggris -->
+
+    <section id="contact" data-lang="en">
+      <div class="container">
+        <div class="section-header  wow fadeInUp">
+          <h3 class="section-title">Contacts Us</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">We Are Ready to Serve You</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1014457.4313857544!2d106.71038082287969!3d-6.681031787780696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c587cd9044db%3A0x9bfd76ade28e69d9!2sGluonIT%20Software%20House!5e0!3m2!1sen!2sid!4v1723096633227!5m2!1sen!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="row wow fadeInUp">
+          <div class="col-lg-6 col-md-6">
+            <div class="contact-about">
+              <h3>GLUONIT</h3>
+              <p>Please visit us directly, or you can 
+                also contact us through our other information links
+
+              </p>
+              <div class="social-links">
+                <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
+                <a href="https://www.facebook.com/gluonit" class="facebook"><i class="fa fa-facebook"></i></a>
+                <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> -->
+                <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
+                <!-- <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>Jl Raya Cicalengka Timur Kp Cikarmajaya RT 01 RW 11 
+                  Ds. Margaasih Kecamatan Cicalengka, Kab Bandung<br>Jawa Barat 40395</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p><b>Marketing</b><br>richie130283@gmail.com <br>Hamzahf45@gmail.com</p>
+              </div>
+
+              
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p><b>HRD</b><br>febywulana@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p><b>Services</b> <br>+62 8212 903 1607 </p>
+              </div>
+              
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p><b>Sales</b> <br>+62 851 6362 6550 <br>+62 811-989-136</p>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Pesan Anda Telah Masuk. Terima Kasih!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
   </main>
+
+<!-- versi bahasa inggris -->
 
   <!--==========================
     Footer
   ============================-->
-  <footer id="footer">
+  <footer id="footer" data-lang="id">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>GluonIT</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
+            -->
+            Designed by <a href="https://bootstrapmade.com/">GluonIT</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="intern/" class="scrollto">Internship</a>
+            <a href="#intro" class="scrollto">Beranda</a>
+            <a href="#about" class="scrollto">Tentang</a>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Aturan dan Legalitas</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <!-- versi bahasa inggris -->
+  <footer id="footer" data-lang="en">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 text-lg-left text-center">
@@ -860,7 +1198,6 @@
       </div>
     </div>
   </footer><!-- #footer -->
-
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
@@ -878,6 +1215,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/extra.js"></script>
 
 </body>
 </html>
