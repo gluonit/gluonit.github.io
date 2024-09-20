@@ -12,3 +12,32 @@
 
 
   
+@media (max-width: 768px) {
+    #langButton {
+      position:absolute;
+      right:70px;
+      background-color:#1dc8cd;
+      color:white;
+      margin-bottom:10px; 
+      margin-top:-1px;
+/* 
+      font-size: 18px !important;
+      padding: 10px 20px !important;
+ */
+    }
+  }
+  @media (min-width: 769px) {
+
+#langButton {
+  position:absolute;
+  right:60px;
+  background-color:#1dc8cd;
+  color:white;
+  margin-bottom:10px; 
+  margin-top:-10px;
+  /* 
+    font-size: 18px !important;
+      padding: 10px 20px !important; 
+ */
+    }
+  }
