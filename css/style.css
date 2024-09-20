@@ -445,6 +445,37 @@ h1, h2, h3, h4, h5, h6 {
   color: #1dc8cd;
 }
 
+
+#mobile-nav .menu-has-children:hover  ul  i{
+  display: block;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav  .menu-has-children:hover  ul {
+  display: block;
+  color: #1dc8cd;
+}
+
+#mobile-nav .menu-has-children:hover  ul  i{
+  display: block;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav  .menu-has-children:hover  ul  i.fa-chevron-up {
+  display: block;
+  color: #1dc8cd;
+}
+
 #mobile-nav ul .menu-item-active {
   color: #1dc8cd;
 }

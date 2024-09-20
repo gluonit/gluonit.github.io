@@ -54,6 +54,12 @@ jQuery(document).ready(function($) {
       $(this).toggleClass("fa-chevron-up fa-chevron-down");
     });
 
+    $(document).on('click', '.menu-has-children', function(e) {
+      $(this).next().toggleClass('menu-item-active');
+      $(this).nextAll('ul').eq(0).slideToggle();
+      $(this).toggleClass("fa-chevron-up fa-chevron-down");
+    });
+
     $(document).on('click', '#mobile-nav-toggle', function(e) {
       $('body').toggleClass('mobile-nav-active');
       $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
