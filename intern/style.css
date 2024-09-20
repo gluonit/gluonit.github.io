@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    background-color: #00bfa5;
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -20,6 +20,14 @@ body {
 }
 
 .content h1 {
+    color: #00bfa5;
+    margin-bottom: 20px;
+}
+.content h2 {
+    color: #00bfa5;
+    margin-bottom: 20px;
+}
+.content h3 {
     color: #00bfa5;
     margin-bottom: 20px;
 }
@@ -70,6 +78,14 @@ body {
     color: #808080;
     transition: color 0.3s ease;
 }
+
+.team-member h3 {
+    font-size: medium;
+    margin: 10px 0;
+    color: #808080;
+    transition: color 0.3s ease;
+}
+
 
 .team-member p {
     color: #808080;
@@ -123,24 +139,37 @@ body {
     }
 }
 
+
+@media (max-width: 768px){
+.back-home {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    font-size: 12px;
+}
+}
+@media (min-width: 769px){
+
 .back-home {
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 10px;
+    font-size: 16px;
 }
-
+}
 .back-home a {
     background-attachment: #00bfa5;
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 16px;
     transition: background-color 0.5s;
 }
 
 .back-home a:hover {
-    background-color: #008e7a;
+    /* background-color: #008e7a; */
+    color: #008e7a;
+
 }
 
 .multi{
@@ -157,3 +186,35 @@ body {
     font-size: 16px;
     transition: background-color 0.5s; */
 }
+
+
+  
+@media (max-width: 768px) {
+    #langButton {
+      position:absolute;
+      right:0px;
+      background-color:#1dc8cd;
+      color:white;
+      margin-bottom:10px; 
+      margin-top:-1px;
+/* 
+      font-size: 18px !important;
+      padding: 10px 20px !important;
+ */
+    }
+  }
+  @media (min-width: 769px) {
+
+#langButton {
+  position:absolute;
+  right:60px;
+  background-color:#1dc8cd;
+  color:white;
+  margin-bottom:10px; 
+  margin-top:-10px;
+  /* 
+    font-size: 18px !important;
+      padding: 10px 20px !important; 
+ */
+    }
+  }
