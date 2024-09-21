@@ -1,8 +1,9 @@
-function changeLanguage(lang) {
-    document.querySelectorAll('[data-lang]').forEach(el => {
-        el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
-    });
-}
+// function changeLanguage(lang) {
+//     document.querySelectorAll('[data-lang]').forEach(el => {
+//         el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
+//     });
+// }
+
 
 document.getElementById('langButton').addEventListener('click', function() {
     if (this.innerText === 'EN') {
@@ -60,3 +61,23 @@ document.getElementById('langButton').addEventListener('click', function() {
 //     langToggle.textContent = 'EN';
 //   }
 // });
+
+function changeLanguage(lang) {
+    // Change the language attribute of the HTML tag
+    document.documentElement.lang = lang;
+
+    // Change the text content based on the selected language
+    const elements = document.querySelectorAll('[data-lang]');
+    elements.forEach(element => {
+      if (element.dataset.lang === lang) {
+        element.style.display = 'inline';
+      } else {
+        element.style.display = 'none';
+      }
+    });
+  }
+
+  // Detect the language from the URL or other logic
+  const urlParams = new URLSearchParams(window.location.search);
+  const lang = urlParams.get('lang') || 'id'; // Default to 'id' if no language is specified
+  changeLanguage(lang);
