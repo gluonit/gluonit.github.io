@@ -904,6 +904,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   padding: 80px 0;
 }
+#call-to-action #aa{  
+  overflow: hidden;
+  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url("../img/call-to-action-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 80px 0;}
 
 #call-to-action .cta-title {
   color: #fff;
