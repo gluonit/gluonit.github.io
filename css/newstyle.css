@@ -9,8 +9,6 @@
   }
 
   /* Basic styling for buttons */
-
-
   
 @media (max-width: 768px) {
     #langButton {
@@ -20,10 +18,7 @@
       color:white;
       margin-bottom:10px; 
       margin-top:-1px;
-/* 
-      font-size: 18px !important;
-      padding: 10px 20px !important;
- */
+
     }
   }
   @media (min-width: 769px) {
@@ -35,9 +30,4 @@
   color:white;
   margin-bottom:10px; 
   margin-top:-10px;
-  /* 
-    font-size: 18px !important;
-      padding: 10px 20px !important; 
- */
-    }
-  }
+  }}
