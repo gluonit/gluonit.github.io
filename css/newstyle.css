@@ -56,3 +56,7 @@
   margin-top:-10px;
   }}
 
+.logo-img {
+  width: 500px;   /* bisa pakai % juga, contoh: 50% */
+  height: auto;   /* biar proporsinya tetap terjaga */
+}
