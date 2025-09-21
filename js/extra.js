@@ -8,15 +8,15 @@
 document.getElementById('langButton').addEventListener('click', function() {
     if (this.innerText === 'EN') {
         this.innerText = 'ID';
-        this.classList.remove('btn-light');
-        this.classList.add('btn-success');
+        this.classList.remove('btn-purple-light');
+        this.classList.add('btn-purple');
         // this.classList.remove('btn-success');
         // this.classList.add('btn-light');
         changeLanguage('en');
     } else {
         this.innerText = 'EN';
-        this.classList.remove('btn-light');
-        this.classList.add('btn-success');
+        this.classList.remove('btn-purple-light');
+        this.classList.add('btn-purple');
         // this.classList.remove('btn-success');
         // this.classList.add('btn-light');
         changeLanguage('id');
