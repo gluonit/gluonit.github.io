@@ -101,3 +101,8 @@
 }
 
 
+#mobile-nav .menu-has-children::before,
+#mobile-nav .menu-has-children::after {
+  content: none !important;
+  display: none !important;
+}
