@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    background: linear-gradient(45deg, #1de099, var(--primary-gradient));
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -163,7 +163,9 @@ body {
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
-    transition: background-color 0.5s;
+    /* transition: background-color 0.5s; */
+     transition: all 0.3s ease-in-out;
+
 }
 
 .back-home a:hover {
@@ -185,6 +187,8 @@ body {
     /* text-decoration: none;
     font-size: 16px;
     transition: background-color 0.5s; */
+    transition: all 0.3s ease-in-out;
+
 }
 
 
@@ -193,11 +197,15 @@ body {
     #langButton {
       position:absolute;
       right:0px;
-      background-color:#1dc8cd;
-      color:white;
+      /* background-color:#1dc8cd;
+      color:white; */
       margin-bottom:10px; 
       margin-top:-1px;
-/* 
+        background-color: var(--primary-color);   /* #8e44ad */
+        color: #fff;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        /* 
       font-size: 18px !important;
       padding: 10px 20px !important;
  */
@@ -208,11 +216,14 @@ body {
 #langButton {
   position:absolute;
   right:60px;
-  background-color:#1dc8cd;
-  color:white;
+  /* background-color:#1dc8cd; */
+  /* color:white; */
   margin-bottom:10px; 
   margin-top:-10px;
-  /* 
+  background-color: var(--primary-color);   /* #8e44ad */
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;  /* 
     font-size: 18px !important;
       padding: 10px 20px !important; 
  */

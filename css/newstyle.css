@@ -25,10 +25,15 @@
     #langButton {
       position:absolute;
       right:70px;
-      background-color:#1dc8cd;
-      color:white;
+      /* background-color:#1dc8cd; */
+      /* color:white; */
       margin-bottom:10px; 
       margin-top:-1px;
+      background-color: var(--primary-color);  
+      color: #fff;
+      border: none;
+      transition: all 0.3s ease-in-out;
+
     }
     .center_contact{
       display: flex;
@@ -50,13 +55,49 @@
 #langButton {
   position:absolute;
   right:60px;
-  background-color:#1dc8cd;
-  color:white;
+  /* background-color:#1dc8cd; */
+  /* color:white; */
   margin-bottom:10px; 
   margin-top:-10px;
-  }}
+  background-color: var(--primary-color);   /* #8e44ad */
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;  }}
 
 .logo-img {
   width: 500px;   /* bisa pakai % juga, contoh: 50% */
   height: auto;   /* biar proporsinya tetap terjaga */
 }
+
+.btn-purple {
+  background-color: var(--primary-color);   /* #8e44ad */
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-purple:hover {
+  background-color: var(--primary-light);  /* #9b59b6 */
+  color: #fff;
+} */
+
+
+.btn-purple {
+  background-color: #8e44ad;   /* ungu utama */
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-purple:hover {
+  background-color: #9b59b6;   /* ungu lebih terang */
+  color: #fff;
+}
+
+.btn-purple-light {
+  background-color: #f3e6f9;   /* ungu pastel terang */
+  color: #8e44ad;
+  border: 1px solid #8e44ad;
+}
+
+
