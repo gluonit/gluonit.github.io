@@ -48,63 +48,50 @@
  
         <a><button id="langButton" class="btn btn-purple" >EN</button></a>
       </div>
-
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active" ><a href="#intro" data-lang="id" >Beranda</a></li>
-          <li class="menu-active" ><a href="#intro" data-lang="en">Home</a></li>
-          <li><a href="#about" data-lang="id">Tentang</a></li>
-          <li><a href="#about" data-lang="en">About</a></li>
-          <!-- <li><a href="#features">Fitur</a></li> -->
-          <!-- <li><a href="#pricing">Harga</a></li> -->
-          <!-- <li><a href="#team">Tim</a></li> -->
-          <!-- <li><a href="#features" data-lang = 'id'>Layanan</a></li> -->
-          <li class="menu-has-children" data-lang="id"><a href="#">Rangka Kegiatan</a>
-            <ul>
-              <li><a href="#features" data-lang = 'id'>Layanan</a></li>
-              <li><a href="products/" data-lang = 'id'>Produk</a></li>
-              <li><a href="galleries/" data-lang = 'id'>Galeri</a></li>
-              <li><a href="projects/" data-lang = 'id'>Proyek</a></li>
-            </ul>
-          </li>
-          <li  class="menu-has-children" data-lang="en"><a href="#">Activities Plans</a>
-              <ul>
-                <li><a href="#features" data-lang = "en">Services</a></li>
-                <li><a href="products/" data-lang = "en">Products</a></li>
-                <li><a href="galleries/" data-lang = "en">Galleries</a></li>
-                <li><a href="projects/" data-lang = "en">Projects</a></li>
-            </ul>
-          </li>
-          <li><a href="#call-to-action" data-lang= 'id'>Hubungi WA</a></li>
-          <li><a href="#call-to-action" data-lang="en">Call WA</a></li>
-          <!-- <li><a href="#gallery">Produk Gambar</a></li>
-          <li class="menu-has-children"><a href="">Drop Downhhh</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
-          <li><a href="#contact" data-lang="id">Kontak</a></li>
-          <li><a href="#contact" data-lang="en">Contact</a></li>
-          <!-- <li><button onclick="changeLanguage('en')">English</button>
-              <button onclick="changeLanguage('id')">Bahasa Indonesia</button></li> -->
+          <!-- Beranda / Home -->
+          <li class="menu-active" data-lang="id"><a href="#intro">Beranda</a></li>
+          <li class="menu-active" data-lang="en"><a href="#intro">Home</a></li>
 
+          <!-- Tentang / About -->
+          <li data-lang="id"><a href="#about">Tentang</a></li>
+          <li data-lang="en"><a href="#about">About</a></li>
+
+          <!-- Rangka Kegiatan / Activities Plans -->
+          <li class="menu-has-children" data-lang="id">
+            <a href="#">Rangka Kegiatan</a>
+            <ul>
+              <li><a href="#features" data-lang="id">Layanan</a></li>
+              <li><a href="products/" data-lang="id">Produk</a></li>
+              <li><a href="galleries/" data-lang="id">Galeri</a></li>
+              <li><a href="projects/" data-lang="id">Proyek</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-has-children" data-lang="en">
+            <a href="#">Activities Plans</a>
+            <ul>
+              <li><a href="#features" data-lang="en">Services</a></li>
+              <li><a href="products/" data-lang="en">Products</a></li>
+              <li><a href="galleries/" data-lang="en">Galleries</a></li>
+              <li><a href="projects/" data-lang="en">Projects</a></li>
+            </ul>
+          </li>
+
+          <!-- Hubungi WA / Call WA -->
+          <li data-lang="id"><a href="#call-to-action">Hubungi WA</a></li>
+          <li data-lang="en"><a href="#call-to-action">Call WA</a></li>
+
+          <!-- Kontak / Contact -->
+          <li data-lang="id"><a href="#contact">Kontak</a></li>
+          <li data-lang="en"><a href="#contact">Contact</a></li>
         </ul>
 
-
+        <!-- Tombol ganti bahasa -->
+        <!-- <button onclick="changeLanguage('id')">Bahasa Indonesia</button>
+        <button onclick="changeLanguage('en')">English</button> -->
       </nav>
-      <!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
 

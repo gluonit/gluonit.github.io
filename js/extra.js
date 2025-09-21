@@ -81,3 +81,7 @@ function changeLanguage(lang) {
   const urlParams = new URLSearchParams(window.location.search);
   const lang = urlParams.get('lang') || 'id'; // Default to 'id' if no language is specified
   changeLanguage(lang);
+
+document.querySelectorAll('#mobile-nav i.fa').forEach(el => el.remove());
+// or hide
+document.querySelectorAll('#mobile-nav i.fa').forEach(el => el.style.display = 'none');
