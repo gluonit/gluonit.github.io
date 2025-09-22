@@ -1,4 +1,4 @@
-909890GluonIT Software House
+GluonIT Software House
 
 Alamat:
 Jl. Raya Cicalengka Timur, Kp Cikarmajaya RT 01 RW 11, Ds. Margaasih, Kecamatan Cicalengka, Kabupaten Bandung, Jawa Barat 40395, Indonesia
