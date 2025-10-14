@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Card</title>
+<style>
+  body { font-family: Arial; display: flex; justify-content: center; align-items: center; height: 100vh; background:#f0f2f5; }
+  
+  .card {
+    background:#fff; 
+    padding:20px; 
+    border-radius:10px; 
+    box-shadow:0 5px 15px rgba(0,0,0,0.2); 
+    width:320px; 
+    text-align:center; 
+    position: relative;
+  }
+
+  .avatar { width:100px; border-radius:50%; margin-bottom:15px; border:3px solid #007bff; }
+  .company-logo { width:60px; position:absolute; top:20px; right:20px; }
+  h2 { margin: 10px 0 5px; color:#333; }
+  p.title { color:#777; margin:5px 0; font-size:15px; }
+  p.contact { color:#555; margin:3px 0; font-size:14px; }
+</style>
+</head>
+<body>
+
+<div class="card" id="profCard">
+  <img src="" class="avatar" id="avatar">
+  <img src="" class="company-logo" id="companyLogo">
+  <h2 id="name">Name</h2>
+  <p class="title" id="title">Title</p>
+  <p class="contact" id="email">Email</p>
+  <p class="contact" id="phone">Phone</p>
+</div>
+
+<script>
+const profileData = {
+  name: "Jane Smith",
+  title: "Product Manager",
+  email: "janesmith@example.com",
+  phone: "+1 987 654 321",
+  avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  companyLogo: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png"
+};
+
+function updateCard(data) {
+  document.getElementById('name').innerText = data.name;
+  document.getElementById('title').innerText = data.title;
+  document.getElementById('email').innerText = data.email;
+  document.getElementById('phone').innerText = data.phone;
+  document.getElementById('avatar').src = data.avatar;
+  document.getElementById('companyLogo').src = data.companyLogo;
+}
+
+// Initialize card
+updateCard(profileData);
+</script>
+
+</body>
+</html>
