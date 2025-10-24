@@ -1,33 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hamzah Fauzi - Professional Card</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hamzah Fauzi - Business Card</title>
 <style>
-  body { font-family: Arial; display: flex; justify-content: center; align-items: center; height: 100vh; background:#f0f2f5; }
-  .card { background:#fff; padding:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.2); width:320px; text-align:center; position: relative; }
-  .avatar {   width: 150;height: 150px;border-radius:50%; margin-bottom:15px; border:3px solid #5a0e5ab6;object-fit: cover; }
-  .company-logo { width:90px; position:absolute; top:20px; right:20px; }
-  h2 { margin: 10px 0 5px; color:#333; }
-  p.title { color:#777; margin:5px 0; font-size:15px; }
-  p.contact { color:#555; margin:3px 0; font-size:14px; }
-  p.address { color:#555; margin:6px 0; font-size:14px; }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #a3d3c4;
+    font-family: "Poppins", sans-serif;
+  }
 
+  .card {
+    position: relative;
+    width: 420px;
+    height: 240px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left {
+    width: 40%;
+    background: linear-gradient(180deg, #042b6b, #0595d9);
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+
+  .left img.logo {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .right {
+    width: 60%;
+    padding: 25px 25px 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #002a5b;
+  }
+
+  .position {
+    font-size: 14px;
+    color: #6ec1e4;
+    margin-bottom: 10px;
+  }
+
+  .info {
+    font-size: 13px;
+    line-height: 1.6em;
+    color: #333;
+  }
+
+  .info i {
+    color: #0595d9;
+    margin-right: 8px;
+  }
+
+  .qr {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #0595d9;
+  }
 </style>
 </head>
 <body>
+  <div class="card">
+    <div class="left">
+      <img src="fotohamzahfauzi.jpg" alt="Hamzah Fauzi" class="avatar">
+      <img src="gluonit.png" alt="Company Logo" class="logo">
+    </div>
+    <div class="right">
+      <div>
+        <div class="name">Hamzah Fauzi</div>
+        <div class="position">Consultant IT Support</div>
+      </div>
 
-<div class="card">
-  <img src="HamzahFauzi.png" class="avatar" alt="RichieRahmatHidayat">
-  <img src="gluonit.png" class="company-logo" alt="Company Logo">
-  <h2>Hamzah Fauzi</h2>
-  <p class="title">Consultant IT Support</p>
-  <p class="contact">info@gluon-it.com</p>
-  <p class="contact">+62 8 1198 9136</p>
-  <p class="address">Jakarta - Indonesia</p>
+      <div class="contact">
+        <div><i>📍</i>Jakarta - Indonesia</div>
+        <div><i>🌐</i><a href="#">gluon-it.com</a></div>
+        <div><i>✉️</i>info@gluon-it.com</div>
+        <div><i>📞</i>+62 8 1198 9136</div>
+      </div>
 
-</div>
-
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com&size=80x80" class="qr" alt="QR Code">
+    </div>
+  </div>
 </body>
 </html>
