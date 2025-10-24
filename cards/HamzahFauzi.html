@@ -116,7 +116,14 @@
   }
 
   /* ====== RESPONSIVE STYLES ====== */
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
+    .name { font-size: 18px; }
+    .position { font-size: 13px; }
+    .contact div { font-size: 12px; }
+    .qr { width: 50px; height: 50px; }
+  }
+
+  @media (max-width: 600px) {
     .card {
       flex-direction: column;
       width: 90%;
@@ -125,8 +132,7 @@
 
     .left {
       width: 100%;
-      height: 160px;
-      flex-direction: column;
+      height: 150px;
       justify-content: center;
     }
 
@@ -142,22 +148,12 @@
     }
 
     .name {
-      font-size: 18px;
+      font-size: 17px;
     }
 
     .position {
-      font-size: 13px;
-      margin-bottom: 12px;
-    }
-
-    .qr {
-      position: relative;
-      top: 0;
-      right: 0;
-      width: 70px;
-      height: 70px;
-      margin-top: 10px;
-      align-self: center;
+      font-size: 12px;
+      margin-bottom: 10px;
     }
 
     .contact {
@@ -167,6 +163,7 @@
 
     .contact div {
       justify-content: flex-start;
+      font-size: 12px;
     }
 
     .contact i {
@@ -174,6 +171,24 @@
       margin-left: 0;
       margin-right: 6px;
     }
+
+    .qr {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 65px;
+      height: 65px;
+      margin-top: 10px;
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .name { font-size: 15px; }
+    .position { font-size: 11px; }
+    .contact div { font-size: 11px; }
+    .avatar { width: 70px; height: 70px; }
+    .qr { width: 60px; height: 60px; }
   }
 </style>
 </head>
@@ -197,10 +212,14 @@
         <div>+62 811 989 136 <i>📞</i></div>
       </div>
 
-      <img 
-        src="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com/cards/HamzahFauzi.html&size=80x80" 
-        class="qr" 
-        alt="QR Code">
+ 
+  <a href="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com/cards/HamzahFauzi.html&size=300x300" target="_blank">
+    <img 
+      src="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com/cards/HamzahFauzi.html&size=80x80" 
+      class="qr" 
+      alt="QR Code">
+  </a>
+
     </div>
   </div>
 </body>
