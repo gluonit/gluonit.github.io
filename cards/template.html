@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Business Card</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #a3d3c4;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .card {
+    position: relative;
+    width: 420px;
+    height: 240px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left {
+    width: 40%;
+    background: linear-gradient(180deg, #042b6b, #0595d9);
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .left img.logo {
+    width: 90%;
+  }
+
+  .right {
+    width: 60%;
+    padding: 25px 25px 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #002a5b;
+  }
+
+  .position {
+    font-size: 14px;
+    color: #6ec1e4;
+    margin-bottom: 10px;
+  }
+
+  .info {
+    font-size: 13px;
+    line-height: 1.6em;
+    color: #333;
+  }
+
+  .info i {
+    color: #0595d9;
+    margin-right: 8px;
+  }
+
+  .qr {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #0595d9;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <img src="https://i.ibb.co/YtL6qMS/gluonit-logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="right">
+      <div>
+        <div class="name">Yout Name</div>
+        <div class="position">your position</div>
+      </div>
+
+      <div class="contact">
+        <div><i>📍</i>000 Street Name, City Name, 00000 - ST</div>
+        <div><i>🌐</i><a href="#">companywebsite.com</a></div>
+        <div><i>✉️</i>youremail@company.com</div>
+        <div><i>📞</i>+0 000 . 0000</div>
+      </div>
+
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=companywebsite.com&size=80x80" class="qr" alt="QR Code">
+    </div>
+  </div>
+</body>
+</html>
