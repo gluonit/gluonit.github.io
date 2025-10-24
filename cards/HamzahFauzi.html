@@ -56,11 +56,16 @@
   /* RIGHT SIDE */
   .right {
     width: 60%;
-    padding: 20px;
+    padding: 20px 15px 20px 20px; /* sedikit geser ke kiri */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+  }
+
+  /* Geser blok nama ke kiri sedikit */
+  .right > div:first-child {
+    margin-left: 5px;
   }
 
   /* Fluid, proportional text */
@@ -74,6 +79,7 @@
     font-size: clamp(11px, 1.7vw, 14px);
     color: #6ec1e4;
     margin-bottom: 10px;
+    line-height: 1.2;
   }
 
   .contact {
@@ -138,14 +144,12 @@
         <div>+62 811 989 136 <i>📞</i></div>
       </div>
 
- 
-  <a href="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com/cards/HamzahFauzi.html&size=300x300" target="_blank">
-    <img 
-      src="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com/cards/HamzahFauzi.html&size=80x80" 
-      class="qr" 
-      alt="QR Code">
-  </a>
-
+      <a href="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com/cards/HamzahFauzi.html&size=300x300" target="_blank">
+        <img 
+          src="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com/cards/HamzahFauzi.html&size=80x80" 
+          class="qr" 
+          alt="QR Code">
+      </a>
     </div>
   </div>
 </body>
