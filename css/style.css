@@ -89,14 +89,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
+  font-family: Corbel, "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px; /* opsional biar elegan */
   text-transform: uppercase;
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
+  color: #ffffff;
+
 }
 
 #header #logo img {
@@ -116,7 +117,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-fixed {
   /* background: linear-gradient(45deg, #1de099, #1dc8cd); */
-  background: var(--primary-gradient);
+  /* background: var(--primary-gradient); */
+  background: #ebe8ebb8;
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -129,9 +131,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   /* background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url(../img/hasiledit.png) center top no-repeat; */
-  background: linear-gradient(45deg, rgba(155, 89, 182, 0.8), rgba(142, 68, 173, 0.8)), url(../img/hasiledit.png) center top no-repeat;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.934), rgba(255, 255, 255, 0.858)), url(../img/hasiledit.png) center top no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative;s
 }
 
 
@@ -161,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 400;
   line-height: 56px;
-  color: #fff;
+  color: #2a032ceb;
 }
 
 @media (max-width: 768px) {
@@ -172,11 +174,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro p {
-  color: #fff;
+  color: #2a032ceb;
   margin-bottom: 20px;
   padding: 0 15px;
   font-size: 24px;
 }
+
+#intro .intro-text a:hover{
+  color: #ffffffeb;
+
+}
+
+#intro .intro-text h2 {
+  font-family: Corbel, "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;   /* opsional, bikin lebih elegan */
+  /* text-transform: uppercase; opsional */
+}
+
 
 @media (max-width: 768px) {
   #intro p {
@@ -197,13 +212,13 @@ h1, h2, h3, h4, h5, h6 {
   /* transition: 0.5s; */
   transition: all 0.3s ease-in-out;
   margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #2a032ceb;
+  color: #2a032ceb;
 }
 
 #intro .btn-get-started:hover {
   color:var(--primary-color);
-  background: #fff;
+  background: #2a032ceb;
 }
 
 #intro .product-screens {
@@ -261,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   /* background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)),url("../img/software.svg"); */
-  background: linear-gradient(45deg, rgba(155, 89, 182, 0.8), rgba(142, 68, 173, 0.8)), url(../img/hasiledit.png) center top no-repeat;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.934), rgba(255, 255, 255, 0.858)), url(../img/hasiledit.png) center top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -293,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 400;
   line-height: 56px;
-  color: #fff;
+  color: #2a032ceb;
 }
 
 @media (max-width: 768px) {
@@ -304,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro-product p {
-  color: #fff;
+  color: #2a032ceb;
   margin-bottom: 20px;
   padding: 0 15px;
   font-size: 24px;
@@ -463,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: #2a032ceb;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -478,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 4px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
+  background: #8e44ad;
 }
 
 .nav-menu ul li {
@@ -487,7 +502,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #333;
+  color: #ffffff;
   /* transition: 0.3s; */
   transition: all 0.3s ease-in-out;
   display: block;
@@ -496,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li:hover > a {
-  color:var(--primary-color);
+  color:#9b989b;
 }
 
 .nav-menu ul ul {
@@ -520,7 +535,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #fff;
+  color: #8e44ad;
 }
 
 @media (max-width: 768px) {
@@ -536,7 +551,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(200, 194, 199, 0.963);
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -554,7 +569,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul li a {
-  color: #fff;
+  color:#2a032ceb;
   font-size: 16px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
@@ -566,7 +581,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul li a:hover {
-  color: #fff;
+  color: #3b073da4;
 }
 
 #mobile-nav ul li li {
@@ -628,7 +643,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(121, 100, 125, 0.384);
   display: none;
 }
 
@@ -639,11 +654,18 @@ body.mobile-nav-active {
 
 body.mobile-nav-active #mobile-nav {
   left: 0;
+ border-bottom: 1px solid rgba(111, 66, 193, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
+
+#mobile-nav .menu-has-children > i {
+  color :var(--primary-color) !important; /* ungu */
+}
+
 
 /*--------------------------------------------------------------
 # Sections
@@ -652,7 +674,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 .section-header .section-title {
   font-size: 32px;
-  color: #111;
+  color: #ffffff5c;
   text-align: center;
   font-weight: 400;
 }
@@ -1501,3 +1523,5 @@ body.mobile-nav-active #mobile-nav-toggle {
   --primary-light: #9b59b6;  /* Ungu lebih terang */
   --primary-gradient: linear-gradient(45deg, #9b59b6, #8e44ad);
 }
+
+
