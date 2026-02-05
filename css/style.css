@@ -551,7 +551,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(200, 194, 199, 0.963);
+  background: #ebe8eb;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -643,7 +643,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(121, 100, 125, 0.384);
+  background: rgba(210, 202, 212, 0.384);
   display: none;
 }
 
@@ -674,7 +674,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 .section-header .section-title {
   font-size: 32px;
-  color: #ffffff5c;
+  color: #2a032ceb;
   text-align: center;
   font-weight: 400;
 }
@@ -932,24 +932,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #call-to-action {
   overflow: hidden;
-  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url("../img/call-to-action-bg.jpg") fixed center center;
-  background-size: cover;
+  background: linear-gradient(rgba(176, 179, 180, 0.65), rgba(39, 2, 45, 0.29)), url("../img/call-to-action-bg.jpg") fixed center center;
+  /* background: linear-gradient(rgba(176, 179, 180, 0.65), rgba(39, 2, 45, 0.29)); */
+  /* height:100px; */
+
+  /* background-size: cover; */
   padding: 80px 0;
 }
-#call-to-action #aa{  
+/* #call-to-action #aa{  
   overflow: hidden;
   background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url("../img/call-to-action-bg.jpg") fixed center center;
   background-size: cover;
-  padding: 80px 0;}
+  padding: 80px 0;} */
 
 #call-to-action .cta-title {
-  color: #fff;
+  color: #ffffff;
   font-size: 28px;
   font-weight: 700;
 }
 
 #call-to-action .cta-text {
-  color: #fff;
+  color: #ffffff;
 }
 
 @media (min-width: 769px) {
@@ -995,17 +998,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-right:10px;
   padding-right: 20px;
   padding-left:20px;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   background: transparent;
 
-  color: #fff;
+  color: #ffffff;
 }
 
 #call-to-action .cta-btn:hover {
   /* background: #1dc8cd; */
-  border: 2px solid #1dc8cd;
-  background: #fff;
-  color: var(--primary-color);
+  border: 2px solid #296214b9;
+  background: #1ce368ef;
+  color: #fff;
+
 }
 .whatsapp-icon {
   display: flex;
