@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hamzah Fauzi - Business Card</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #a3d3c4;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+  }
+
+  .card {
+    position: relative;
+    width: min(420px, 90vw);
+    aspect-ratio: 7 / 4;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* LEFT SIDE */
+  .left {
+    width: 40%;
+    background: linear-gradient(180deg, #042b6b, #0595d9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+
+  .left img.logo {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  /* RIGHT SIDE */
+  .right {
+    width: 60%;
+    padding: 20px 15px 20px 20px; /* sedikit geser ke kiri */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Geser blok nama ke kiri sedikit */
+  .right > div:first-child {
+    margin-left: -10px;
+  }
+
+  /* Fluid, proportional text */
+  .name {
+    font-size: clamp(14px, 2.2vw, 20px);
+    font-weight: 700;
+    color: #002a5b;
+  }
+
+  .position {
+    font-size: clamp(11px, 1.7vw, 14px);
+    color: #6ec1e4;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+  }
+
+  .contact div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    font-size: clamp(10px, 1.3vw, 13px);
+  }
+
+  .contact i {
+    order: 2;
+    color: #0595d9;
+    margin-left: 6px;
+    font-style: normal;
+  }
+
+  /* QR CODE LINK */
+  .qr {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: clamp(45px, 6vw, 60px);
+    height: clamp(45px, 6vw, 60px);
+    transition: transform 0.2s ease;
+  }
+
+  .qr:hover {
+    transform: scale(1.1);
+  }
+
+  a {
+    text-decoration: none;
+    color: #0595d9;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <img src="wawikosupeno.jpg" alt="Hamzah Fauzi" class="avatar">
+      <img src="gluonit.png" alt="Company Logo" class="logo">
+    </div>
+
+    <div class="right">
+      <div>
+        <div class="name">Wawiko Supeno,</div>
+        <div class="position">IT Consultant</div>
+      </div>
+
+      <div class="contact">
+        <div>Jakarta - Indonesia <i>📍</i></div>
+        <div><a href="https://gluon-it.com">gluon-it.com</a> <i>🌐</i></div>
+        <div>info@gluon-it.com <i>✉️</i></div>
+        <div>+62 856-7067-660 <i>📞</i></div>
+      </div>
+
+      <a href="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com/cards/WawikoS.html&size=300x300" target="_blank">
+        <img 
+          src="https://api.qrserver.com/v1/create-qr-code/?data=https://gluon-it.com/cards/WawikoS.html&size=80x80" 
+          class="qr" 
+          alt="QR Code">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
