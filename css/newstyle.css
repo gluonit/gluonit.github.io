@@ -262,4 +262,1279 @@ Our Team Section
 
 
 
-*/
+
+/* ========================================
+   GLUONIT - CONSISTENT COLOR THEME
+======================================== */
+
+:root {
+  --gluon-primary: #6c3bd1;
+  --gluon-primary-dark: #48219a;
+  --gluon-primary-light: #a78bfa;
+  --gluon-accent: #8b5cf6;
+  --gluon-text: #25213a;
+  --gluon-muted: #6b6680;
+  --gluon-bg: #ffffff;
+  --gluon-soft-bg: #f7f4ff;
+}
+
+/* Hero background */
+.hero-modern {
+  background: linear-gradient(
+    135deg,
+    var(--gluon-bg) 0%,
+    var(--gluon-soft-bg) 100%
+  );
+  color: var(--gluon-text);
+}
+
+/* Hero glow */
+.hero-glow-one {
+  background: var(--gluon-primary);
+  opacity: 0.12;
+}
+
+.hero-glow-two {
+  background: var(--gluon-accent);
+  opacity: 0.10;
+}
+
+/* Hero heading accent */
+.hero-content h1 span {
+  color: var(--gluon-primary);
+}
+
+/* Eyebrow and status */
+.hero-eyebrow {
+  color: var(--gluon-primary-dark);
+}
+
+.hero-status,
+.ai-indicator {
+  background: var(--gluon-accent);
+}
+
+/* Primary button */
+.hero-btn-primary {
+  background: var(--gluon-primary);
+  border: 1px solid var(--gluon-primary);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-primary:hover {
+  background: var(--gluon-primary-dark);
+  border-color: var(--gluon-primary-dark);
+  color: #ffffff;
+}
+
+/* Secondary button */
+.hero-btn-secondary {
+  color: var(--gluon-primary);
+  border: 1px solid var(--gluon-primary);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-secondary:hover {
+  color: #ffffff;
+  background: var(--gluon-primary);
+}
+
+/* Highlights */
+.hero-highlights i {
+  color: var(--gluon-primary);
+}
+
+/* AI card */
+.hero-ai-card {
+  border-color: rgba(108, 59, 209, 0.18);
+}
+
+.hero-ai-header {
+  color: var(--gluon-primary-dark);
+}
+
+.hero-ai-icon {
+  color: var(--gluon-primary);
+  background: var(--gluon-soft-bg);
+}
+
+.ai-node.active {
+  color: #ffffff;
+  background: var(--gluon-primary);
+  border-color: var(--gluon-primary);
+}
+
+/* Workflow arrows */
+.ai-workflow > i {
+  color: var(--gluon-primary);
+}
+
+/* Technology tags */
+.hero-tech-tags span {
+  color: var(--gluon-primary-dark);
+  background: var(--gluon-soft-bg);
+  border: 1px solid rgba(108, 59, 209, 0.15);
+}
+
+/* Floating tags */
+.hero-floating-tag {
+  color: var(--gluon-primary-dark);
+  background: #ffffff;
+  border: 1px solid rgba(108, 59, 209, 0.18);
+  box-shadow: 0 8px 28px rgba(72, 33, 154, 0.10);
+}
+
+.hero-floating-tag i {
+  color: var(--gluon-primary);
+}
+
+/* Orbit decoration */
+.hero-orbit {
+  border-color: rgba(108, 59, 209, 0.20);
+}
+
+/* Bottom accent */
+.hero-bottom-line {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gluon-primary),
+    var(--gluon-accent),
+    transparent
+  );
+}
+
+
+/* ========================================
+   HERO SECTION - SPACING IMPROVEMENT
+======================================== */
+
+/* Ruang antara navbar dan konten hero */
+.hero-modern {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Kontainer utama */
+.hero-modern .hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* Jarak teks hero */
+.hero-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero-eyebrow {
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.hero-content h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  font-size: clamp(34px, 4vw, 54px);
+  font-weight: 700;
+}
+
+.hero-content h1 span {
+  display: inline-block;
+}
+
+.hero-content p {
+  max-width: 560px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Tombol hero */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* Highlight layanan */
+.hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  margin-top: 20px;
+}
+
+.hero-highlights > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+/* Visual AI */
+.hero-visual {
+  position: relative;
+  padding: 30px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-ai-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 440px;
+  padding: 30px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 25px 70px rgba(72, 33, 154, 0.12);
+}
+
+/* Tag mengambang */
+.hero-floating-tag {
+  z-index: 3;
+}
+
+/* ========================================
+   TABLET & MOBILE
+======================================== */
+
+@media (max-width: 991px) {
+  .hero-modern {
+    padding-top: 130px;
+    padding-bottom: 70px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    padding-top: 10px;
+  }
+
+  .hero-visual {
+    margin-top: 35px;
+  }
+
+  .hero-ai-card {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-modern {
+    padding-top: 115px;
+    padding-bottom: 55px;
+  }
+
+  .hero-content {
+    padding: 10px 8px 0;
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    margin-bottom: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-highlights {
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .hero-visual {
+    margin-top: 25px;
+    padding: 20px 8px;
+  }
+
+  .hero-ai-card {
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+
+  .hero-bottom-line {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-content h1 {
+    font-size: 29px;
+  }
+
+  .hero-ai-card {
+    padding: 18px 14px;
+  }
+}
+
+
+/* ========================================
+   GLUONIT INTELLIGENCE - CARD REFINEMENT
+======================================== */
+
+.hero-visual {
+  padding: 35px 20px;
+  box-sizing: border-box;
+}
+
+.hero-ai-card {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 28px;
+  border: 1px solid rgba(108, 59, 209, 0.14);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 20px 60px rgba(72, 33, 154, 0.12);
+  box-sizing: border-box;
+}
+
+/* Header kartu */
+.hero-ai-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.hero-ai-header .ai-indicator {
+  width: 9px;
+  height: 9px;
+  min-width: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.hero-ai-header > i {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* Ikon AI */
+.hero-ai-icon {
+  width: 66px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+/* Judul dan deskripsi */
+.hero-ai-card h3 {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 12px;
+  color: #25213a;
+}
+
+.hero-ai-card > p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #6b6680;
+  margin: 0 0 26px;
+}
+
+/* Workflow: Input -> AI Engine -> Action */
+.ai-workflow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 16px minmax(0, 1.2fr) 16px minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 25px;
+}
+
+.ai-node {
+  min-width: 0;
+  min-height: 82px;
+  padding: 12px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  text-align: center;
+  border-radius: 14px;
+  border: 1px solid #eee8fa;
+  background: #faf9fd;
+  box-sizing: border-box;
+}
+
+.ai-node > i {
+  font-size: 20px;
+}
+
+.ai-node span {
+  display: block;
+  font-size: 11px;
+  line-height: 1.35;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.ai-node.active {
+  background: #6c3bd1;
+  color: #fff;
+  border-color: #6c3bd1;
+  box-shadow: 0 7px 18px rgba(108, 59, 209, 0.2);
+}
+
+.ai-workflow > i {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Tag AI, Automation, Integration */
+.hero-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.hero-tech-tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 600;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+/* Label mengambang di luar kartu */
+.hero-floating-tag {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 8px 25px rgba(72, 33, 154, 0.12);
+}
+
+.tag-ai {
+  top: 8px;
+  right: 0;
+}
+
+.tag-code {
+  bottom: 8px;
+  left: 0;
+}
+
+/* ========================================
+   RESPONSIVE CARD
+======================================== */
+
+@media (max-width: 991px) {
+  .hero-visual {
+    max-width: 560px;
+    margin: 25px auto 0;
+    padding: 35px 25px;
+  }
+
+  .tag-ai {
+    right: 5px;
+    top: 0;
+  }
+
+  .tag-code {
+    left: 5px;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual {
+    padding: 38px 8px;
+    margin-top: 20px;
+  }
+
+  .hero-ai-card {
+    padding: 22px 17px;
+    border-radius: 20px;
+  }
+
+  .hero-ai-header {
+    font-size: 10px;
+    letter-spacing: 0.7px;
+    margin-bottom: 23px;
+  }
+
+  .hero-ai-card h3 {
+    font-size: 21px;
+  }
+
+  .hero-ai-card > p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .ai-workflow {
+    grid-template-columns: minmax(0, 1fr) 12px minmax(0, 1.2fr) 12px minmax(0, 1fr);
+    gap: 4px;
+  }
+
+  .ai-node {
+    min-height: 76px;
+    padding: 10px 3px;
+    gap: 8px;
+  }
+
+  .ai-node > i {
+    font-size: 17px;
+  }
+
+  .ai-node span {
+    font-size: 10px;
+  }
+
+  .ai-workflow > i {
+    font-size: 10px;
+  }
+
+  .hero-tech-tags {
+    gap: 6px;
+  }
+
+  .hero-tech-tags span {
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+
+  .hero-floating-tag {
+    padding: 9px 11px;
+    font-size: 10px;
+  }
+
+  .tag-ai {
+    right: 0;
+  }
+
+  .tag-code {
+    left: 0;
+  }
+}
+
+
+
+/* =========================================
+   GLUONIT - MOBILE LAYOUT FIX
+   Letakkan di bagian paling bawah newstyle.css
+========================================= */
+
+/* Hindari elemen melebar melebihi layar */
+html {
+  width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: clip;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Pastikan section tidak membuat layar melebar */
+section {
+  max-width: 100%;
+}
+
+/* =========================================
+   HEADER & LANGUAGE BUTTON
+========================================= */
+@media (max-width: 768px) {
+  #header .container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #logo {
+    max-width: calc(100% - 100px);
+  }
+
+  #logo img {
+    max-width: 100%;
+    height: auto !important;
+    max-height: 48px !important;
+  }
+
+  #langButton {
+    position: absolute;
+    top: 10px;
+    right: 55px;
+    margin: 0;
+    z-index: 1001;
+    padding: 7px 12px;
+  }
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+.hero-modern {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-modern .row {
+  min-width: 0;
+}
+
+.hero-content,
+.hero-visual {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero-content h1 {
+  overflow-wrap: break-word;
+}
+
+.hero-content p {
+  overflow-wrap: break-word;
+}
+
+.hero-actions a {
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+}
+
+.hero-visual {
+  width: 100%;
+}
+
+.hero-ai-card {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero-floating-tag {
+  max-width: calc(100% - 16px);
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  .hero-modern {
+    padding-top: 110px;
+    padding-bottom: 45px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(28px, 7.5vw, 34px);
+    line-height: 1.25;
+  }
+
+  .hero-highlights {
+    align-items: flex-start;
+  }
+
+  .hero-visual {
+    padding: 38px 10px;
+    margin-top: 20px;
+  }
+
+  .hero-ai-card {
+    padding: 20px 15px;
+  }
+
+  .tag-ai {
+    top: 0;
+    right: 4px;
+  }
+
+  .tag-code {
+    bottom: 0;
+    left: 4px;
+  }
+
+  .ai-workflow {
+    width: 100%;
+    grid-template-columns:
+      minmax(0, 1fr) 12px
+      minmax(0, 1.2fr) 12px
+      minmax(0, 1fr);
+    gap: 3px;
+  }
+
+  .ai-node {
+    min-width: 0;
+  }
+}
+
+/* HP berukuran kecil */
+@media (max-width: 380px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+
+  .hero-ai-card {
+    padding: 18px 12px;
+  }
+
+  .hero-floating-tag {
+    font-size: 9px;
+    padding: 8px 9px;
+  }
+}
+
+/* =========================================
+   ABOUT & SERVICES
+========================================= */
+@media (max-width: 768px) {
+  #about,
+  #features {
+    margin-top: 0 !important;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  #about .container-fluid,
+  #features .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #about .row,
+  #features .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #about .about-img img,
+  #features .features-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 25px;
+  }
+
+  #about .content {
+    padding: 0 5px;
+  }
+
+  #about .content h2 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  #about .content h3 {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  #features .box {
+    margin-bottom: 25px;
+  }
+
+  #features .box .description {
+    line-height: 1.7;
+  }
+}
+
+/* =========================================
+   WHATSAPP CALL TO ACTION
+========================================= */
+@media (max-width: 768px) {
+  #call-to-action {
+    margin: 60px 0 !important;
+    padding: 0 15px;
+  }
+
+  #call-to-action .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #call-to-action .col-lg-9,
+  #call-to-action .col-md-2 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0 10px;
+  }
+
+  #call-to-action .cta-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  #call-to-action .cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* =========================================
+   TEAM SECTION
+========================================= */
+@media (max-width: 768px) {
+  .team-section {
+    padding: 50px 0;
+  }
+
+  .team-section .section-title {
+    font-size: 29px;
+  }
+
+  .team-card {
+    padding: 30px 20px;
+  }
+
+  .team-card h4 {
+    font-size: 20px;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+@media (max-width: 768px) {
+  #contact iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+
+  #contact .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #contact .center_contact,
+  #contact .center_contact .row {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  #contact .center_contact .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #contact .info,
+  #contact .contact-about {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+@media (max-width: 768px) {
+  #footer {
+    padding: 30px 0;
+  }
+
+  #footer .footer-links a {
+    display: inline-block;
+    margin: 6px;
+  }
+}
+
+/* =========================================
+   GLUONIT — FINAL MOBILE HERO FIX
+   Letakkan paling bawah newstyle.css
+========================================= */
+
+/* Hindari overflow horizontal */
+.hero-modern,
+.hero-modern .hero-container,
+.hero-modern .row,
+.hero-modern .hero-content,
+.hero-modern .hero-visual {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.hero-modern {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-modern .hero-container {
+  width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero-modern {
+    padding: 120px 0 55px;
+    min-height: auto;
+  }
+
+  .hero-modern .hero-content {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-modern .hero-content h1 {
+    max-width: 650px;
+    margin: 0 auto 20px;
+    font-size: clamp(32px, 5vw, 42px);
+    line-height: 1.25;
+    overflow-wrap: break-word;
+  }
+
+  .hero-modern .hero-content p {
+    max-width: 540px;
+    margin: 0 auto 24px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .hero-modern .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-modern .hero-highlights {
+    justify-content: center;
+  }
+
+  .hero-modern .hero-visual {
+    width: 100%;
+    max-width: 540px;
+    margin: 30px auto 0;
+    padding: 35px 20px;
+  }
+}
+
+/* HP */
+@media (max-width: 768px) {
+  .hero-modern {
+    padding: 110px 0 40px;
+    min-height: auto;
+  }
+
+  .hero-modern .hero-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-modern .hero-content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero-modern .hero-eyebrow {
+    margin-bottom: 16px;
+    font-size: 11px;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-modern .hero-content h1 {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 18px;
+    font-size: clamp(28px, 7.2vw, 34px);
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-modern .hero-content h1 span {
+    display: inline;
+  }
+
+  .hero-modern .hero-content p {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto 24px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* Tombol */
+  .hero-modern .hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 24px;
+    gap: 12px;
+  }
+
+  .hero-modern .hero-actions a {
+    width: 100%;
+    min-height: 48px;
+    margin: 0;
+    padding: 13px 16px;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  /* Highlight layanan */
+  .hero-modern .hero-highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 12px;
+    text-align: left;
+  }
+
+  .hero-modern .hero-highlights > div {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  /* Visual kartu AI */
+  .hero-modern .hero-visual {
+    width: 100%;
+    max-width: 440px;
+    margin: 24px auto 0;
+    padding: 38px 8px;
+  }
+
+  .hero-modern .hero-ai-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 22px 15px;
+    border-radius: 18px;
+  }
+
+  .hero-modern .hero-ai-header {
+    gap: 7px;
+    margin-bottom: 22px;
+    font-size: 9px;
+    letter-spacing: 0.4px;
+  }
+
+  .hero-modern .hero-ai-icon {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 16px;
+    font-size: 25px;
+  }
+
+  .hero-modern .hero-ai-card h3 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .hero-modern .hero-ai-card > p {
+    font-size: 12px;
+    line-height: 1.75;
+    margin-bottom: 22px;
+  }
+
+  /* Workflow */
+  .hero-modern .ai-workflow {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1fr) 10px
+      minmax(0, 1.15fr) 10px
+      minmax(0, 1fr);
+    gap: 3px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-modern .ai-node {
+    min-width: 0;
+    min-height: 70px;
+    padding: 8px 2px;
+    gap: 7px;
+    border-radius: 10px;
+  }
+
+  .hero-modern .ai-node > i {
+    font-size: 16px;
+  }
+
+  .hero-modern .ai-node span {
+    font-size: 9px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-modern .ai-workflow > i {
+    font-size: 9px;
+  }
+
+  /* Tag teknologi */
+  .hero-modern .hero-tech-tags {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .hero-modern .hero-tech-tags span {
+    padding: 6px 9px;
+    font-size: 10px;
+    white-space: normal;
+  }
+
+  /* Label mengambang */
+  .hero-modern .hero-floating-tag {
+    max-width: calc(100% - 16px);
+    padding: 8px 10px;
+    font-size: 10px;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  .hero-modern .tag-ai {
+    top: 0;
+    right: 4px;
+  }
+
+  .hero-modern .tag-code {
+    bottom: 0;
+    left: 4px;
+  }
+}
+
+/* HP kecil */
+@media (max-width: 380px) {
+  .hero-modern {
+    padding-top: 100px;
+  }
+
+  .hero-modern .hero-content h1 {
+    font-size: 27px;
+  }
+
+  .hero-modern .hero-ai-card {
+    padding: 19px 10px;
+  }
+
+  .hero-modern .hero-ai-header {
+    font-size: 8px;
+  }
+
+  .hero-modern .ai-workflow {
+    grid-template-columns:
+      minmax(0, 1fr) 8px
+      minmax(0, 1.15fr) 8px
+      minmax(0, 1fr);
+    gap: 2px;
+  }
+
+  .hero-modern .ai-node span {
+    font-size: 8px;
+  }
+
+  .hero-modern .hero-floating-tag {
+    font-size: 9px;
+    padding: 7px 8px;
+  }
+}
+
+
+
+/* HERO MOBILE — tambah tinggi dan turunkan posisi */
+@media (max-width: 768px) {
+  .hero-modern {
+    min-height: 780px !important;
+    padding-top: 140px !important;
+    padding-bottom: 60px !important;
+    height: auto !important;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .hero-modern .hero-container {
+    margin-top: 0px;
+  }
+}
